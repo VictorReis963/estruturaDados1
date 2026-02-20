@@ -11,11 +11,11 @@ public class Circulo {
         this.raio=raio;
     }
 
-    public class met{
+    public class Metodos{
 
-        public void atualizar_raio(float novo_raio){
+        public void Circulo(float novo_raio){
             if (novo_raio >=1){
-                setRaio(novo_raio);
+                setRaio(novo_raio); 
                 System.out.println("Novo raio: "+ getRaio()+"\n");
             }
             else{
@@ -26,10 +26,30 @@ public class Circulo {
 
 
         public double calculaArea(){
-            float r=getRaio();
+            double r=getRaio();
 
             return Math.PI*Math.pow(r,2);
         }
+
+        public float calculaDiametro(){
+            float r = getRaio();
+            return r*2;
+
+        }
+
+        public void mostrarDados(){
+                       
+            System.out.println("-------------------------------------");
+            System.out.println("DADOS DO CIRCULO");
+            
+            System.out.println("Raio: "+getRaio()+"\n");
+            System.out.println("Area: "+calculaArea()+"\n");
+            System.out.println("Diametro: "+calculaDiametro()+"\n");
+            System.out.println("------------------------------------");
+        }
+
+
+
 
     }
 
