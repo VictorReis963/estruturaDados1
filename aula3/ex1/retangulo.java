@@ -23,7 +23,11 @@ public class retangulo{
 
     }
     public retangulo(float altura, float largura){
-        setAltura(altura);
+        retangulo r = new retangulo();
+        r.setAltura(altura);
+        r.setLargura(largura);
+
+        r.close();
 
     }
 

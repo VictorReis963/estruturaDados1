@@ -3,9 +3,11 @@ import java.util.Scanner;
 
 public class testeRetangulo {
     public static void main(String [] args){
-        
-        float a= r.getAltura;
-        float l= r.getLargura();
+        retangulo r = new retangulo();
+        r.retangulo();
+
+        System.out.println("retangulo altura e largura"+ r.getAltura()+" , " + r.getLargura(),"\n");
+        System.out.println("area do retangulo "+ );
 
     }
         
